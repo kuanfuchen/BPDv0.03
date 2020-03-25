@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/pages/client-api.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <!-- JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <!-- Boostrap4 -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- CSS -->
+    <link rel="shortcut icon" href="./img/android-icon.jpg" type="image/x-icon">
+    <!-- icon -->
+    <title>WEB</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- nav start -->
+        <div class="html-space ">
+            <div class="nav row fixed-top nav-bg-fixed border-bottom border-light ">
+                <div class="col-12">
+                    <div class="d-flex">
+                        <div class="ham-border">
+                            <!-- ham-btn-window -->
+                            <button class="c-hamburger c-hamburger--htra ham-window ">
+                                <span>toggle menu</span>
+                            </button>
+                            <!-- ham-btn-mobile -->
+                            <button class="c-hamburger c-hamburger--htla ham-mobile" value="hamMobileBtn">
+                                <span>toggle menu</span>
+                            </button>
+                        </div>
+                        <!-- 漢堡選單 -->
+                        <a href=" #" class="d-inline  ml-2 py-0 mt-1" style="text-decoration: none; "><img
+                                class="  py-0 my-0 px-0" src="./img/1583478320340.jpg" style="width: 40px;" alt="">
+                            <span class="pt-0 mt-0 index-text">Big Data Processor</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav-end -->
+    </div>
+    <div class="container-fluid ">
+        <div class="Page-flex page-flex-aside">
+            <div class="aside mt-1">
+                <ul class="left-selection pl-1 pr-1 border-light border-1">
+                    <li>
+                        <a href="#" class="list-branch btn px-0 mt-1 mx-0 py-0  aside-text"><i class="fab fa-android"
+                                style="font-size: 20px;"></i>
+                            <span class="left-selection-text">Quick Start &nbsp;<i
+                                    class="fas fa-sort-down"></i></span></a>
+                        <!-- branch -->
+                        <ul class="branch-selection mt-1 mb-1">
+                            <li><a href="#" class="py-0 my-0 btn btn-sm branch-text">table</a></li>
+                            <li><a href="#" class="py-0 my-0 btn btn-sm branch-text ">row</a></li>
+                            <li><a href="#" class="py-0 my-0 btn btn-sm branch-text ">column</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="btn py-0 px-0 aside-text"><i class="fas fa-archive"
+                                style="font-size: 22px;"></i><span class="left-selection-text">&nbsp;Project
+                                list</a></span>
+                    </li>
+                    <li><a href="#" class="btn py-0 px-0 aside-text "><i class="fas fa-bookmark "
+                                style="font-size: 25px;"></i><span class="left-selection-text">&nbsp;Create a
+                                project</span></a>
+                    </li>
+                    <li><a href="#" class="btn py-0 px-0 aside-text "><i class="fas fa-sync fa-1x"></i><span
+                                class="left-selection-text">&nbsp;Recent&nbsp;activities</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn px-0 py-0  aside-text AdministrationToggle"><i
+                                class="fab fa-android"></i><span
+                                class="left-selection-text">&nbsp;Administration&nbsp;<i
+                                    class="fas fa-sort-down pr-0"></i></span>
+                        </a>
+                        <!-- branch -->
+                        <ul class="AdministrationBranch-selection mt-1 mb-1">
+                        </ul>
+                    <li><a href="#" class="btn py-0 px-0 aside-text "><i class="fas fa-tasks"></i><span
+                                class="left-selection-text">&nbsp;Manage
+                                Tasks</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn px-0 py-0 aside-text AccountToggle"><i class="fab fa-android"></i>
+                            <span class="left-selection-text">&nbsp;Account&nbsp; <i
+                                    class="fas fa-sort-down fa-1x"></i></span></a>
+                        <!-- branch -->
+                        <ul class="AccountBranch-selection mt-1 mb-1">
+                        </ul>
+                    <li><a href="#" class="btn py-0 px-0 aside-text "><i class="fas fa-user-edit"></i><span
+                                class="left-selection-text">&nbsp;User
+                                profile</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn px-0 py-0 aside-text "><i class="fas fa-home"
+                                style="font-size: 21px;"></i><span class="left-selection-text">&nbsp;Home</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Page-flex">
+                <div class="content-space bg-light px-0">
+                    <!-- <div class="" style="width: 100%; height:100%;">
+                        <img src="./img/excel-example.jpg" alt="" srcset="">
+                        <p style="color: cornsilk;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                            facere harum cupiditate consectetur tempore eligendi quibusdam magni, distinctio blanditiis
+                            recusandae nobis sed quisquam, aperiam impedit. Itaque sequi quo doloremque iure!</p>
+                    </div> -->
+
+                    <div class=" mb-3 card-example mt-2 ml-2">
+                        <img class="card-img " src="./img/excel.png" alt="Card image cap">
+                        <div class="card-body">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum, modi dolores
+                            laborum illo commodi perspiciatis. Ducimus error mollitia quaerat iste itaque nihil, quis
+                            facilis unde rem veritatis quo natus.
+                            Nam velit minima incidunt eveniet est corporis reiciendis, neque quaerat qui doloremque
+                            nobis nulla doloribus, maxime labore quasi accusantium ad odio at ratione eaque blanditiis
+                            aliquid asperiores? Autem, repellendus aliquam!
+                            Aut repudiandae eos magnam ab eligendi. Voluptatibus architecto laborum sint a maiores amet
+                            optio, rerum rem illum numquam. Voluptates, sapiente inventore! Laboriosam molestiae
+                            delectus assumenda fuga, dicta voluptatum inventore ab.
+                            Ab, perferendis molestiae exercitationem magnam quam culpa qui aut itaque a maxime quo quasi
+                            modi libero totam ipsum dolore minus! Sit libero quibusdam animi magnam accusantium
+                            necessitatibus eligendi optio pariatur!
+                            Dignissimos, expedita totam. Voluptas, beatae quos? Voluptate nulla sed molestias, odit,
+                            harum aperiam, ipsam reiciendis sit distinctio dignissimos iure quos facilis asperiores!
+                            Assumenda non velit sunt eveniet et quod ullam?
+                            Ipsum dolorem quo ullam ducimus sapiente quia, omnis minima expedita delectus voluptatem
+                            possimus neque odio molestias reiciendis optio non dolore. Odio facilis doloremque, minus
+                        </p>
+                    </div>
+                    <!--  頁面的內容
+                    <div class="card-example mb-3">
+                        <img class="card-img " src="./img/061219049img_0821.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                    <div class="card-example">
+                        <div class="card-body">
+                            <img class="card-img" src="./img/1583909505125.jpg" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="card-example">
+                        <div class="card-body">
+                            <img class="card-img" src="./img/sai-bo-peng-ke-2033-qiangzhi-tw-3440x1440-300_15.jpg"
+                                alt="Card image cap">
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/all.js"></script>
+</body>
+
+</html>
